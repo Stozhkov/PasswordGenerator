@@ -12,9 +12,9 @@ public class PasswordGenerator {
 
         for (int i = 0; i < passwordMask.length(); i ++) {
             switch (passwordMask.charAt(i)) {
-                case 'c': newPassword += new SmallSymbol().getSymbolForPassword();
-                case 'C': newPassword += new UpperSymbol().getSymbolForPassword();
-                case 'n': newPassword += new NumericSymbol().getSymbolForPassword();
+                case 'c': newPassword += new SmallSymbol().getSymbolForPassword(); break;
+                case 'C': newPassword += new UpperSymbol().getSymbolForPassword(); break;
+                case 'n': newPassword += new NumericSymbol().getSymbolForPassword(); break;
             }
         }
 
