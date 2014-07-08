@@ -29,7 +29,8 @@ public class UserInterface {
         String passwordMask;
 
         do {
-            System.out.println("Введите маску пароля. с - буква, n - число");
+            System.out.println("Введите маску пароля.");
+            System.out.println("с - буква маленькая, C - буква большая, n - число");
             System.out.print("Ожидается ввод пользователя:");
 
             Scanner in = new Scanner(System.in);
@@ -44,7 +45,7 @@ public class UserInterface {
         boolean checkPasswordResult = false;
 
         for (int i = 0; i < passwordMask.length(); i++) {
-            if (passwordMask.charAt(i) != 'c' && passwordMask.charAt(i) != 'n') {
+            if (passwordMask.charAt(i) != 'c' && passwordMask.charAt(i) != 'C' && passwordMask.charAt(i) != 'n') {
                 checkPasswordResult = false;
                 break;
             } else {
