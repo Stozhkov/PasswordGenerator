@@ -11,13 +11,10 @@ public class PasswordGenerator {
         String newPassword = "";
 
         for (int i = 0; i < passwordMask.length(); i ++) {
-
-            if (passwordMask.charAt(i) == 'c') {
-                newPassword += new SmallSymbol().getSymbolForPassword();
-            } else if (passwordMask.charAt(i) == 'n') {
-                newPassword += new NumericSymbol().getSymbolForPassword();
-            }  else if (passwordMask.charAt(i) == 'C') {
-                newPassword += new UpperSymbol().getSymbolForPassword();
+            switch (passwordMask.charAt(i)) {
+                case 'c': newPassword += new SmallSymbol().getSymbolForPassword();
+                case 'C': newPassword += new UpperSymbol().getSymbolForPassword();
+                case 'n': newPassword += new NumericSymbol().getSymbolForPassword();
             }
         }
 
