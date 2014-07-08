@@ -3,7 +3,6 @@ public class SmallSymbol extends Symbol {
                                                 'h', 'k', 'm', 'n', 'p', 'r', 's',
                                                 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 
-
     public char getSymbolForPassword() {
         return super.getSymbol(characterSet);
     }
